@@ -1,0 +1,15 @@
+#video{
+
+}
+.banniere_accueil{
+    position: relative;
+    
+}
+.banniere_accueil h1{
+    color: white;
+    position: absolute;
+    top: 50%; /* Ajustez la position verticale du titre */
+    left: 50%; /* Ajustez la position horizontale du titre */
+    transform: translate(-50%, -50%); /* Centre le titre */
+    font-size: 3em;
+}
