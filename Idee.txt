@@ -1,0 +1,1 @@
+*Faire un GRID d'image pour faire un hyperlien vers les differentes pages pour creer une site dinamique.
