@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    font-family: 'Nova Square', sans-serif;
 }
 a{
     text-decoration: none;
@@ -10,7 +11,6 @@ a{
     align-items: center;
     background-color: red;
     text-align: left;
-    width: 100%;
     padding: 5px;
     border-radius: 20px;
 }
@@ -25,7 +25,6 @@ nav{
     justify-content: space-between;
     background-color: #e2e2e2;
     padding: 10px;
-    width: 100%;
     position: sticky;
     position: -webkit-sticky;
     top: 0; /* required */
