@@ -1,11 +1,12 @@
 .banniere_accueil{
     background-image: url('../image/fond_accueil.jpg');
-    width: 100%;
-    height: 756px;
+    background-size: cover;
+    background-position: center;
+    padding: 365px;
 }
 
 .banniere_accueil h1{
     text-align: center;
     color: white;
-    font-size: 2em;
+    font-size: 3em;
 }
