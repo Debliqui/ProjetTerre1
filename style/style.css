@@ -53,3 +53,14 @@ nav img{
     justify-content: space-between;
     align-items: center;
 }
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #e2e2e2;
+}
+footer div{
+    text-align: center;
+}
+footer a img{
+    width: 25px;
+}
