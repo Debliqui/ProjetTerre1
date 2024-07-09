@@ -10,6 +10,7 @@ h2{
 }
 p{
     font-size: 1.5em;
+    text-align: justify;
 }
 a{
     text-decoration: none;
