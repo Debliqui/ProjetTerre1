@@ -15,23 +15,6 @@ p{
 a{
     text-decoration: none;
 }
-.entete{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: red;
-    text-align: left;
-    padding: 5px;
-    border-radius: 20px;
-}
-.entete img{
-    width: 15px;
-    height: 15px;
-    padding: 5px
-}
-header p{ 
-    font-size: 1em;
-}
 nav{
     background-color: #e2e2e2;
     position: sticky;
@@ -77,14 +60,6 @@ footer a img{
     width: 25px;
 }
 @media screen and (max-width: 996px) {
-    header p{
-        font-size: 0.75em;
-    }
-    .entete img{
-        width: 10px;
-        height: 10px;
-        padding: 5px
-    }
     .navigation{
         display: flex;
         flex-direction: column;
