@@ -29,14 +29,13 @@ h1{
     width: 100%;
 }
 .box3{
-    /* border: 1px white solid; */
-    width: 100%;
-    height: 50%;
     order: 3;
+    width: 100%;
+    height: 300px;
 }
 .box3 img{
     width: 100%;
-    height: 50%;
+    height: 100%;
 }
 .lien_googleE{
     padding-top: 50px;
@@ -52,9 +51,6 @@ h1{
     color: white;
 }
 @media screen and (max-width: 996px){
-    .box3{
-        padding-top: 25px;
-    }
     .bouton{
         padding: 0;
     }
