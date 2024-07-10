@@ -5,7 +5,7 @@ h1{
 .contenu{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 450px 300px;
+    grid-template-rows: 500px 300px;
 }
 .box1{
     /* border: 1px black solid; */
@@ -31,12 +31,14 @@ h1{
 .box2 p{
     border: 1px black solid;
     background-color: white;
+    color: black;
     width: 25%;
     padding: 5px;
     text-align: right;
     position: absolute;
     bottom: -40px;
     right: 10px;
+    display: none;
 }
 .box3{
     /* border: 1px black solid; */

@@ -2,6 +2,11 @@
     margin: 0;
     font-family: 'Nova Square', sans-serif;
 }
+body{
+    background: linear-gradient(90deg, #0F1E2D, #010E12 ) ;
+    color: white;
+}
+
 h1{
     font-size: 3em;
 }
@@ -16,7 +21,7 @@ a{
     text-decoration: none;
 }
 nav{
-    background-color: #e2e2e2;
+    background-color: gray;
     position: sticky;
     position: -webkit-sticky;
     top: 0; /* required */
@@ -30,7 +35,9 @@ nav a:hover{
     color: bisque;
 }
 nav img{
-    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
     width: 100px;
 }
 .nav_list{
@@ -47,7 +54,7 @@ nav img{
     justify-content: space-between;
 }
 footer{
-    background-color: #e2e2e2;
+    background-color: gray;
 }
 .footer_box{
     display: flex;
@@ -58,6 +65,10 @@ footer div{
 }
 footer a img{
     width: 25px;
+}
+footer p{
+    color: black;
+    text-align: center;
 }
 @media screen and (max-width: 996px) {
     .navigation{
