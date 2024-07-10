@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+    padding: 25px;
+}
+h2{
+    text-align: center;
+    padding: 25px;
+}
+li{
+    font-size: 1.5em;
+    padding: 10px;
+}
+.contenu{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.box1{
+    width: 60%;
+    padding: 80px;
+}
+.box2{
+    border: 2px gray solid;
+    width: 60%;
+}
+.box2 img{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+@media screen and (max-width: 996px){
+    .box2{
+        width: 100%;
+    }
+    .box1{
+        width: 80%;
+        padding: 20px;
+    }
+    li{
+        font-size: 1em;
+    }
+}
