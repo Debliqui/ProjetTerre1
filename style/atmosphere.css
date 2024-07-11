@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+    padding: 25px;
+}
+h2{
+    text-align: center;
+    padding: 25px;
+}
+.contenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.box1{
+    width: 60%;
+    padding: 80px;
+}
+.box2{
+    border: 2px gray solid;
+    width: 40%;
+}
+.box2 img{
+    width: 100%;
+}
+@media screen and (max-width: 996px){
+    .contenu{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .box2{
+        order: 1;
+    }
+    .box1{
+        width: 80%;
+        padding: 20px;
+        order: 2;
+    }
+    li{
+        font-size: 1em;
+    }
+}
