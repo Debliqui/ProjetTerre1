@@ -26,8 +26,24 @@ h2{
 .formulaire{
     background-color: white;
     color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+fieldset{
+    padding: 15px;
+    margin: 25px;
+}
+fieldset div{
+    padding: 15px;
+}
+.element3{
+    display: flex;
+}
+.element4{
+    text-align: right;
+}
 @media screen and (max-width: 996px) {
 .contenu{
     display: flex;
