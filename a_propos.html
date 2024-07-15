@@ -46,26 +46,57 @@
       </section>
       <section class="formulaire">
         <h2>Contact</h2>
+          <div class="container">
             <form method="get" action="">
-              <fieldset>
-                <legend>Votre avis m'interesse</legend>
-                <div class="element1">
+              <h2>Votre avis m'interesse</h2>
+              <div class="rows">
+                <div class="col_left">
                   <label for="nom">Nom</label>
-                    <input type="text" name="nom" id="nom" placeholder="Ex: Arthur" size="25" maxlength="20" required>
                 </div>
-                <div class="element2">
+                <div class="col_right">
+                  <input type="text" name="nom" id="nom" placeholder="Ex: Arthur" size="25" maxlength="20" required>
+                </div>
+              </div>
+              <div class="rows">
+                <div class="col_left">
+                  <label for="prenom">Prénom</label>
+                </div>
+                <div class="col_right">
+                  <input type="text" name="prenom" id="prenom" placeholder="Ex: Dupons" size="25" maxlength="20" required>
+                </div>
+              </div>
+              <div class="rows">
+                <div class="col_left">
                   <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="@gmail.com" size="35" maxlength="30" required>
                 </div>
-                <div class="element3">
-                  <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="10px" cols="20px"></textarea>
+                <div class="col_right">
+                  <input type="email" name="email" id="email" placeholder="@gmail.com" size="35" maxlength="30" required>
                 </div>
-                <div class="element4">
-                  <input type="submit" value="Envoyer">
+              </div>
+              <div class="rows">
+                <div class="col_left">
+                  <label for="satisfaction">Satisfaction</label>
                 </div>
-              </fieldset>
+                <div class="col_right">
+                  <p>1
+                  <input type="range" id="satisfaction" name="satisfaction" min="0" max="100" step="10">
+                  10</p>
+                </div>
+              </div>
+              <div class="rows">
+                <div class="col_left">
+                  <label for="message">Commentaire</label>
+                </div> 
+                <div class="col_right"> 
+                  <textarea name="message" id="message"></textarea>
+                </div>
+              </div>  
+              <br>
+              <div class="rows">
+                <input type="submit" value="Envoyer">
+              </div>
             </form>
+          </div>
       </section>
     </main>
     <footer>

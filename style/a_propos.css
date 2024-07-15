@@ -1,48 +1,92 @@
 h1{
     text-align: center;
-    padding: 25px;
+    padding: 30px;
 }
 h2{
     text-align: center;
-    padding: 25px;
+    padding: 40px;
 }
 .contenu{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    height: 750px;
 }
 .box1{
     width: 50%;
+}
+.box1 p{
+    padding: 0 80px;
 }
 .box2{
     display: flex;
     border: 1px gray solid;
     width: 40%;
-    margin: 25px;
+    margin: 30px;
 }
 .box2 img{
     width: 100%;
 }
 .formulaire{
-    background-color: white;
+    background-color: rgb(201, 199, 199);
     color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-fieldset{
+.container{
     padding: 15px;
-    margin: 25px;
+    margin-bottom: 80px;
+    border: 1px gray solid;
+    background-color: #A9A9A9;
+    border-radius: 20px;
+    width: 30%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
-fieldset div{
-    padding: 15px;
+.container h2{
+    text-align: start;
 }
-.element3{
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+.rows{
     display: flex;
+    justify-content: flex-end;
 }
-.element4{
-    text-align: right;
+.col_left{
+    width: 25%;
+}
+.col_right{
+    width: 75%;
+    padding: 12px;
+}
+input[type=text], input[type=email], textarea{
+    border: none;
+    border-radius: 2px 2px 0 0 ;
+    border-bottom: 2px black solid;
+    width: 100%;
+}
+#satisfaction{
+    width: 80%;
+}
+.col_right p{
+    font-size: 1.5em;
+}
+textarea{
+    width: 100%;
+    height: 200px;
+}
+input[type=submit]{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+input[type=submit]:hover{
+    color: white;
+    background-color: black;
 }
 @media screen and (max-width: 996px) {
 .contenu{
@@ -50,11 +94,32 @@ fieldset div{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    height: 100%;
 }
 .box1{
-    width: 80%;
+    width: 100%;
+    padding: 0;
 }
 .box2{
     width: 60%;
 }
+.container{
+    width: 80%;
+}
+#satisfaction{
+    width: 65%;
+}
+.col_left{
+    width: 40%;
+}
+.col_right{
+    width: 60%;
+}
+.container h2{
+    padding: 0;
+}
+/* Apres avoir apris JS(nav burger+ pages contact)
+.formulaire{
+    display: none;
+} */
 }
