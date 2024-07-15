@@ -2,12 +2,13 @@
     background-image: url('../image/fond_accueil.jpg');
     background-size: cover;
     background-position: center;
-    padding: 365px;
+    padding: 300px;
 }
-
 .banniere_accueil h1{
     text-align: center;
     color: white;
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+    padding: 40px;
 }
 .grid_accueil{
     background-color: white;

@@ -41,7 +41,6 @@ nav img{
     width: 100px;
 }
 .nav_list{
-    /* border: 1px solid black; */
     display: block;
     width: 25%;
     display: flex;
