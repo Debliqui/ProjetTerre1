@@ -1,0 +1,3 @@
+-menu burger pour rajouter toute les pages.
+-creation de la pages contacts pour les ecran inferieur a 960px.
+-ajout de contenu.
