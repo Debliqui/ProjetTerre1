@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-// Pages
+/* Pages */
 @import 'pages/index.css';
+@import 'pages/home.css';
 @import 'pages/a_propos.css';
 @import 'pages/atmosphere.css';
 @import 'pages/centre_de_la_terre.css';
@@ -11,18 +12,19 @@
 @import 'pages/montagnes.css';
 @import 'pages/volcans.css';
 
-//Modules
+/* Modules */
 @import 'modules/navBar.css';
+@import 'modules/footer.css';
 
-//Design System
+/* Design System */
 :root{
-    //Colors
+    /*Colors*/
     --background-first: gray;
     --background-secondary: black;
     --body-color: white;
     --body-color-secondary: black;
     
-    //Text configuration
+    /*Text configuration*/
     --body-font: 'Roboto';
     --body-highlight-font: 'Roboto';
     --heder-font: 'Bona Nova SC';
@@ -81,9 +83,9 @@ h2 {
     text-decoration-thickness: 0.188rem;
 }
 
-a{
+* > a{
     text-decoration: none;
-}
+} 
 
 @media (max-width: 768px) {
     :root {

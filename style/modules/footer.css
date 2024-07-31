@@ -1,0 +1,17 @@
+.foot {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  padding: 1.5rem;
+}
+.foot__droits {
+  text-align: center;
+}
+.foot__icon {
+  width: 25px;
+}
+.foot__lien {
+  text-align: center;
+  padding: 1rem;
+}/*# sourceMappingURL=footer.css.map */
