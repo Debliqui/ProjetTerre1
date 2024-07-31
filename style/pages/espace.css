@@ -28,6 +28,11 @@ h1 {
   border: 2px gray solid;
   width: 60%;
 }
+@media screen and (max-width: 768px) {
+  .contenu__espace__box2 {
+    width: 80%;
+  }
+}
 .contenu__espace__box2 img {
   display: flex;
   flex-direction: column;

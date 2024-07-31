@@ -29,6 +29,9 @@ h1{
         order: 1;
         border: 2px gray solid;
         width: 60%;
+        @include screen{
+            width: 80%;
+        }
         & img{
             display: flex;
             flex-direction: column;
