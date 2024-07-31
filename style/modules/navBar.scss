@@ -3,7 +3,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: gray;
     padding: 0.5rem;
 
     &__logo{
@@ -23,7 +22,7 @@
         font-weight: var(--body-font-weight);
         font-size: var(--body-font-size);
         line-height: var(--body-line-height);
-        color: var(--body-color-secondary);
+        color: var(--body-color);
         padding: 24px;
         cursor: pointer;
         transform: scale(0.1);

@@ -3,36 +3,32 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>A propos</title>
     <link rel="stylesheet" href="style/main.css" />
-    <link rel="stylesheet" href="style/a_propos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/pages/a_propos.css">
     
   </head>
   <body>
     <header>
-    
+      <nav>
+        <div class="navBar">
+          <div class="navBar__logo">
+            <img src="image/Logo/logo-Terre1.png" alt="Logo Terre 1">
+          </div>
+          <div class="navBar_list">
+            <a class="navBar__lien" href="index.html">ACCUEIL</a>
+            <a class="navBar__lien" href="a_propos.html">À PROPOS</a>
+          </div>
+        </div>
+      </nav>
     </header>
-
-    <nav>
-      <div class="navigation">
-        <div class="logo-Terre1">
-          <img src="image/Logo/logo-Terre1.png" alt="Logo Terre 1">
-        </div>
-        <div class="nav_list">
-          <a href="index.html">Accueil</a>
-          <a href="a_propos.html">À propos</a>
-        </div>
-      </div>
-    </nav>
+  
     <main>
       <h1>À propos</h1>
-      <section class="contenu">
-          <div class="box1">
-            <h2>Projet Terre 1</h2>
-            <p>Ce site est un projet personnel réalisé lors d'une formation.<br>
+      <section class="contener">
+          <div class="contener__box1">
+            <h2 class="contener__box1__title">Projet Terre 1</h2>
+            <p class="contener__box1__paragraphe">Ce site est un projet personnel réalisé lors d'une formation.<br>
               L'idée initiale du site est de créer un support décrivant notre planète, appelé ici "Terre 1", 
               pouvant servir à un nouvelle arrivant sur notre planète.<br>
               Vous y trouverez un contenu varié sur le thème de la planète Terre et de ces merveilles de la nature.
@@ -40,59 +36,59 @@
               Il est à prendre comme une vulgarisation scientifique et accessible à tous publics.
               Les paragraphes sont rédigé à l'aide d'une IA et de recherche sur le web.</p>
           </div>
-          <div class="box2">
-            <img src="image/Logo/logo-Terre1.png" alt="Logo Terre 1">
+          <div class="contener__box2">
+            <img class="contener__box2__img" src="image/Logo/logo-Terre1.png" alt="Logo Terre 1">
           </div>
       </section>
-      <section class="formulaire">
-        <h2>Contact</h2>
-          <div class="container">
+      <section class="form">
+        <h2 class="form__title">Contact</h2>
+          <div class="form__container">
             <form method="get" action="">
               <h2>Votre avis m'interesse</h2>
-              <div class="rows">
-                <div class="col_left">
+              <div class="form__rows">
+                <div class="form__col_left">
                   <label for="nom">Nom</label>
                 </div>
-                <div class="col_right">
+                <div class="form__col_right">
                   <input type="text" name="nom" id="nom" placeholder="Ex: Arthur" size="25" maxlength="20" required>
                 </div>
               </div>
-              <div class="rows">
-                <div class="col_left">
+              <div class="form__rows">
+                <div class="form__col_left">
                   <label for="prenom">Prénom</label>
                 </div>
-                <div class="col_right">
+                <div class="form__col_right">
                   <input type="text" name="prenom" id="prenom" placeholder="Ex: Dupons" size="25" maxlength="20" required>
                 </div>
               </div>
-              <div class="rows">
-                <div class="col_left">
+              <div class="form__rows">
+                <div class="form__col_left">
                   <label for="email">Email</label>
                 </div>
-                <div class="col_right">
+                <div class="form__col_right">
                   <input type="email" name="email" id="email" placeholder="@gmail.com" size="35" maxlength="30" required>
                 </div>
               </div>
-              <div class="rows">
-                <div class="col_left">
+              <div class="form__rows">
+                <div class="form__col_left">
                   <label for="satisfaction">Satisfaction</label>
                 </div>
-                <div class="col_right">
+                <div class="form__col_right">
                   <p>1
                   <input type="range" id="satisfaction" name="satisfaction" min="0" max="100" step="10">
                   10</p>
                 </div>
               </div>
-              <div class="rows">
-                <div class="col_left">
+              <div class="form__rows">
+                <div class="form__col_left">
                   <label for="message">Commentaire</label>
                 </div> 
-                <div class="col_right"> 
+                <div class="form__col_right"> 
                   <textarea name="message" id="message"></textarea>
                 </div>
               </div>  
               <br>
-              <div class="rows">
+              <div class="form__rows">
                 <input type="submit" value="Envoyer">
               </div>
             </form>
@@ -100,25 +96,25 @@
       </section>
     </main>
     <footer>
-      <div class="footer_box">
-        <div>
+      <div class="foot">
+        <div class="foot__droits">
           <p>© 2024 Tous droits réservés</p>
         </div>
-        <div>
+        <div class="foot__lien">
           <a target="_blank" href="https://www.linkedin.com/in/valentin-d-290332112">
-            <img class="icone" src="image/logo/In-White-72.png" alt="Logo linkedin" />
+            <img class="foot__icon" src="image/logo/In-White-72.png" alt="Logo linkedin" />
           </a>
           <a target="_blank" href="https://www.instagram.com/">
-            <img class="icone" src="image/Logo/logo-white-instagrame.png" alt="Logo Instagramme"/>
+            <img class="foot__icon" src="image/Logo/logo-white-instagrame.png" alt="Logo Instagramme"/>
           </a>       
           <a target="_blank" href="https://x.com/">
-            <img class="icone" src="image/logo/logo-white-X.png" alt="Logo X"/>
+            <img class="foot__icon" src="image/logo/logo-white-X.png" alt="Logo X"/>
           </a>  
           <a target="_blank" href="https://www.facebook.com/">
-            <img class="icone" src="image/Logo/logo-white-Facebook.png" alt="Logo Facebook"/>
+            <img class="foot__icon" src="image/Logo/logo-white-Facebook.png" alt="Logo Facebook"/>
           </a>
         </div>
       </div>  
-    </footer>        
+    </footer>       
   </body>
 </html>

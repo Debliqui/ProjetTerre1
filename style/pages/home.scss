@@ -1,24 +1,43 @@
+@mixin screen{
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
 .banner{
-    background-image: url('/image/fond_accueil.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 300px;
-
+    position: relative;
+    overflow: hidden;
+    padding: 400px;
+    @include screen{
+        padding: 1.5rem;
+    }
     &__title{
         text-align: center;
-        color: var(--body-color);
+        position: relative;
+        z-index: 2;
         box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
         padding: 40px;
     }
+    &__background{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        opacity: 0.5;
+    }
 }
-.grid-accueil{
-    background-color: white;
-    padding: 60px;
 
+.grid-accueil{
+    padding: 60px;
+    @include screen{
+            padding: 1.5rem;
+    }
     &__title{
         text-align: center;
         margin-bottom: 80px;
-        color: var(--body-color-secondary);
+    @include screen{
+        margin-bottom: 0;
+    }
     }
 }
 .grid{
@@ -26,6 +45,11 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px;
     gap: 15px;
+    @include screen{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 300px);            gap: 15px;
+    }
 
     &__photo{
         width: 100%;
@@ -36,10 +60,12 @@
 }
 .lien_pages{
     position: relative;
-
+    @include screen{
+        position: relative;
+    }
     &:hover .photo_hover {
         display: flex;
-      }
+        }
 }
 .photo_hover {
     position: absolute;
@@ -51,38 +77,11 @@
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
-    color: white;
+    color: var(--body-color);
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 6px;
     display: none;
-}
-
-/* Banner */
-@media screen and (max-width: 768px){
-    .banner{
-        padding: 1.5rem;
-    }
-}
-
-/* Grid */
-@media screen and (max-width: 768px){
-    .grid-accueil{
-        padding: 1.5rem;
-
-        &__title{
-            margin-bottom: 0;
-        }
-    }
-    .grid{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 300px);
-        gap: 15px;
-    }
-    .lien_pages{
-        position: relative;
-    }
-    .photo_hover {
+    @include screen{
         position: absolute;
         top: 0;
         left: 0;
@@ -93,7 +92,7 @@
         justify-content: center;
         font-size: 1.5em;
         color: white;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.21);
         border-radius: 6px;
-      } 
-  }
+    }
+}
