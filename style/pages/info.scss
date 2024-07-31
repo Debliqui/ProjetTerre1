@@ -1,0 +1,142 @@
+@mixin screen{
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+h1{
+    text-align: center;
+    padding: 30px;
+}
+
+.contener{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 750px;
+    @include screen{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+    &__box1{
+        width: 50%;
+        @include screen{
+            width: 100%;
+            padding: 0;
+        }
+    }
+    &__box1__title{
+        text-align: center;
+        padding: 40px;
+    }
+    &__box1__paragraphe{
+        padding: 0 80px;
+        text-align: center;
+    }
+    &__box2{
+        display: flex;
+        border: 1px gray solid;
+        width: 40%;
+        margin: 30px;
+        @include screen{
+            width: 60%;
+        }
+    }
+    &__box2__img{
+        width: 100%;
+    }
+}
+
+.form{
+    background-color: rgb(201, 199, 199);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title{
+        text-align: center;
+    }
+    &__container{
+        padding: 15px;
+        margin-bottom: 80px;
+        border: 1px gray solid;
+        background-color: #A9A9A9;
+        border-radius: 20px;
+        width: 30%;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        @include screen{
+            width: 80%;
+        }
+    }
+    &__container> label{
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+    &__rows{
+        display: flex;
+        justify-content: flex-end;
+        @include screen{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__col_left{
+        width: 25%;
+        padding: 24px;
+        @include screen{
+            width: 100%;
+            padding: 8px 0;
+        }
+    }
+    &__col_right{
+        width: 75%;
+        padding: 24px;
+        @include screen{
+            width: 100%;
+            padding:0 ;
+        }
+    }
+    &__col_right> p{
+        font-size: 1.5em;
+    }
+    input[type=text], input[type=email], textarea{
+        border: none;
+        border-radius: 2px 2px 0 0 ;
+        border-bottom: 2px black solid;
+        width: 100%;
+    }
+    #satisfaction{
+        width: 80%;
+        @include screen{
+            width: 65%;
+        }
+    }
+    textarea{
+        width: 100%;
+        height: 200px;
+    }
+    input[type=submit]{
+        padding: 10px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    input[type=submit]:hover{
+        color: white;
+        background-color: black;
+    }
+    @include screen{
+        input[type=submit]:active{
+            color: white;
+            background-color: black;
+        }
+    }
+}
+/* Apres avoir apris JS(nav burger+ pages contact)
+.formulaire{
+    display: none;
+} */

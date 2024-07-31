@@ -1,0 +1,153 @@
+h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+.contener {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 750px;
+}
+@media screen and (max-width: 768px) {
+  .contener {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+}
+.contener__box1 {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .contener__box1 {
+    width: 100%;
+    padding: 0;
+  }
+}
+.contener__box1__title {
+  text-align: center;
+  padding: 40px;
+}
+.contener__box1__paragraphe {
+  padding: 0 80px;
+  text-align: center;
+}
+.contener__box2 {
+  display: flex;
+  border: 1px gray solid;
+  width: 40%;
+  margin: 30px;
+}
+@media screen and (max-width: 768px) {
+  .contener__box2 {
+    width: 60%;
+  }
+}
+.contener__box2__img {
+  width: 100%;
+}
+
+.form {
+  background-color: rgb(201, 199, 199);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form__title {
+  text-align: center;
+}
+.form__container {
+  padding: 15px;
+  margin-bottom: 80px;
+  border: 1px gray solid;
+  background-color: #A9A9A9;
+  border-radius: 20px;
+  width: 30%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+@media screen and (max-width: 768px) {
+  .form__container {
+    width: 80%;
+  }
+}
+.form__container > label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+.form__rows {
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 768px) {
+  .form__rows {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.form__col_left {
+  width: 25%;
+  padding: 24px;
+}
+@media screen and (max-width: 768px) {
+  .form__col_left {
+    width: 100%;
+    padding: 8px 0;
+  }
+}
+.form__col_right {
+  width: 75%;
+  padding: 24px;
+}
+@media screen and (max-width: 768px) {
+  .form__col_right {
+    width: 100%;
+    padding: 0;
+  }
+}
+.form__col_right > p {
+  font-size: 1.5em;
+}
+.form input[type=text], .form input[type=email], .form textarea {
+  border: none;
+  border-radius: 2px 2px 0 0;
+  border-bottom: 2px black solid;
+  width: 100%;
+}
+.form #satisfaction {
+  width: 80%;
+}
+@media screen and (max-width: 768px) {
+  .form #satisfaction {
+    width: 65%;
+  }
+}
+.form textarea {
+  width: 100%;
+  height: 200px;
+}
+.form input[type=submit] {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.form input[type=submit]:hover {
+  color: white;
+  background-color: black;
+}
+@media screen and (max-width: 768px) {
+  .form input[type=submit]:active {
+    color: white;
+    background-color: black;
+  }
+}
+
+/* Apres avoir apris JS(nav burger+ pages contact)
+.formulaire{
+    display: none;
+} *//*# sourceMappingURL=info.css.map */
