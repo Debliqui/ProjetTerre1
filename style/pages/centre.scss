@@ -1,0 +1,49 @@
+@mixin screen{
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+
+h1{
+    text-align: center;
+    padding: 25px;
+}
+.contenu_centre{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    &__title{
+        text-align: center;
+        padding: 25px;
+    }
+    &__box1{
+        width: 60%;
+        padding: 80px;
+        @include screen{
+            width: 80%;
+            padding: 20px;
+        }
+    }
+    &__list li{
+        font-size: 1.25rem;
+        padding: 10px;
+        @include screen{
+            font-size: 1rem;
+        }
+    }
+    &__box2{
+        border: 2px gray solid;
+        width: 60%;
+        @include screen{
+            width: 80%;
+        }
+    }
+    &__box2 img{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
