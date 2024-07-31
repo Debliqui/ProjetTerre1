@@ -1,60 +1,84 @@
-h1{
-    text-align: center;
-    padding: 40px;
+h1 {
+  text-align: center;
+  padding: 40px;
 }
-.contenu{
-    display: flex;
+
+.contenu__espace {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenu__espace__box1 {
+  order: 2;
+  padding-bottom: 24px;
+  width: 60%;
+}
+@media screen and (max-width: 768px) {
+  .contenu__espace__box1 {
+    width: 80%;
+  }
+}
+.contenu__espace__box1__title {
+  text-align: center;
+  padding: 25px;
+}
+.contenu__espace__box2 {
+  order: 1;
+  border: 2px gray solid;
+  width: 60%;
+}
+@media screen and (max-width: 768px) {
+  .contenu__espace__box2 {
+    width: 80%;
+  }
+}
+.contenu__espace__box2 img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contenu__espace__box3 {
+  order: 4;
+  width: 100%;
+  height: 300px;
+}
+.contenu__espace__box3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  order: 3;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .btn {
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  }
 }
-.box1{
-    order: 2;
-    padding: 80px;
-    width: 60%;
+.btn__txt {
+  padding: 8px 8px;
+  text-shadow: 3px 3px rgb(91, 85, 85);
 }
-.box1 h2{
+@media screen and (max-width: 768px) {
+  .btn__txt {
     text-align: center;
-    padding: 25px;
+  }
 }
-.box2{
-    border: 2px gray solid;
-    width: 60%;
+.btn__googleE {
+  background-color: skyblue;
+  color: black;
+  border-radius: 5px;
+  box-shadow: 2px 2px rgb(91, 85, 85);
+  padding: 5px;
 }
-.box2 img{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.box3{
-    order: 3;
-    width: 100%;
-    height: 300px;
-}
-.box3 img{
-    width: 100%;
-    height: 100%;
-}
-.lien_googleE{
-    padding-top: 50px;
-}
-.bouton{
-    background-color: skyblue;
-    color: black;
-    border-radius: 5px;
-    padding: 5px;
-}
-.bouton:hover{
-    background-color: rgb(95, 95, 117);
-    color: white;
-}
-@media screen and (max-width: 996px){
-    .bouton{
-        padding: 0;
-    }
-    .lien_googleE{
-        order: 4;
-    }
-}
+.btn__googleE:hover {
+  background-color: rgb(95, 95, 117);
+  color: white;
+}/*# sourceMappingURL=espace.css.map */
