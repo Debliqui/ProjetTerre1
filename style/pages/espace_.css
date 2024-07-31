@@ -1,0 +1,9 @@
+
+@media screen and (max-width: 996px){
+    .bouton{
+        padding: 0;
+    }
+    .lien_googleE{
+        order: 4;
+    }
+}
