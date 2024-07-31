@@ -4,9 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="stylesheet" href="style/style.css"/>
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/pages/index.css">
   
   </head>
   <body>
@@ -20,43 +19,43 @@
           <img src="image/Logo/logo-Terre1.png" alt="Logo Terre 1">
         </div>
         <div class="navBar_list">
-          <a href="index.html">Accueil</a>
-          <a href="a_propos.html">À propos</a>
+          <a class="navBar__lien" href="index.html">Accueil</a>
+          <a class="navBar__lien" href="a_propos.html">À propos</a>
         </div>
       </div>
     </nav>
 
     <main>
       <section >
-      <div class="banniere_accueil">
-          <h1> Bienvenue sur Terre 1</h1>
+      <div class="banner">
+          <h1 class="banner__title"> Bienvenue sur Terre 1</h1>
       </div>
       </section>
-      <section class="grid_accueil">
-        <h2>Venez explorer le monde avec nous!</h2>
-        <div class="grid_photo">
+      <section class="grid-accueil">
+        <h2 class="grid-accueil__title">Venez explorer le monde avec nous!</h2>
+        <div class="grid">
           <a href="espace.html" class="lien_pages">
-            <img src="image/Grid_accueil/la_terre_vue_de_l'espace.jpg" alt="La terre vue de l'espace">
+            <img class="grid__photo" src="image/Grid_accueil/la_terre_vue_de_l'espace.jpg" alt="La terre vue de l'espace">
             <div class="photo_hover">L'espace</div>
           </a>
           <a href="centre_de_la_terre.html" class="lien_pages">
-            <img src="image/Grid_accueil/la_terre_vue_du_centre.jpg" alt="Schema du noyaux terrestre">
+            <img class="grid__photo" src="image/Grid_accueil/la_terre_vue_du_centre.jpg" alt="Schema du noyaux terrestre">
             <div class="photo_hover">Centre de la terre</div>
           </a>
           <a href="fond_marin.html" class="lien_pages">
-            <img src="image/Grid_accueil/dans_les_profondeurs.jpg" alt="Photo des fond marin">  
+            <img class="grid__photo" src="image/Grid_accueil/dans_les_profondeurs.jpg" alt="Photo des fond marin">  
             <div class="photo_hover">Fond marin</div>
           </a>
           <a href="atmosphere.html" class="lien_pages">
-            <img src="image/Grid_accueil/Dans_les_aires.jpg" alt="Photo dans les nuages">
+            <img class="grid__photo" src="image/Grid_accueil/Dans_les_aires.jpg" alt="Photo dans les nuages">
             <div class="photo_hover">Dans les aires</div>
           </a>
           <a href="les_montagnes.html" class="lien_pages">
-            <img src="image/Grid_accueil/en_haut_des_montagnes.jpg" alt="Photo de montganes">
+            <img class="grid__photo" src="image/Grid_accueil/en_haut_des_montagnes.jpg" alt="Photo de montganes">
             <div class="photo_hover">Nos Montagnes</div>
           </a>
           <a href="les_volcans.html" class="lien_pages">
-            <img src="image/Grid_accueil/dans_les_volcans.jpg" alt="Photo d'une Éruption volcanique">
+            <img class="grid__photo" src="image/Grid_accueil/dans_les_volcans.jpg" alt="Photo d'une Éruption volcanique">
             <div class="photo_hover">Nos Volcans</div>
           </a>
         </div>
@@ -64,22 +63,22 @@
     </main>
 
     <footer>
-        <div class="footer_box">
-          <div>
+        <div class="foot">
+          <div class="foot__droits">
             <p>© 2024 Tous droits réservés</p>
           </div>
-          <div>
+          <div class="foot__lien">
             <a target="_blank" href="https://www.linkedin.com/in/valentin-d-290332112">
-              <img class="icone" src="image/logo/In-White-72.png" alt="Logo linkedin" />
+              <img class="foot__icon" src="image/logo/In-White-72.png" alt="Logo linkedin" />
             </a>
             <a target="_blank" href="https://www.instagram.com/">
-              <img class="icone" src="image/Logo/logo-white-instagrame.png" alt="Logo Instagramme"/>
+              <img class="foot__icon" src="image/Logo/logo-white-instagrame.png" alt="Logo Instagramme"/>
             </a>       
             <a target="_blank" href="https://x.com/">
-              <img class="icone" src="image/logo/logo-white-X.png" alt="Logo X"/>
+              <img class="foot__icon" src="image/logo/logo-white-X.png" alt="Logo X"/>
             </a>  
             <a target="_blank" href="https://www.facebook.com/">
-              <img class="icone" src="image/Logo/logo-white-Facebook.png" alt="Logo Facebook"/>
+              <img class="foot__icon" src="image/Logo/logo-white-Facebook.png" alt="Logo Facebook"/>
             </a>
           </div>
         </div>  

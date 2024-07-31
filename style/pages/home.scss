@@ -1,38 +1,45 @@
-.banniere_accueil{
-    background-image: url('../image/fond_accueil.jpg');
+.banner{
+    background-image: url('/image/fond_accueil.jpg');
     background-size: cover;
     background-position: center;
     padding: 300px;
+
+    &__title{
+        text-align: center;
+        color: var(--body-color);
+        box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+        padding: 40px;
+    }
 }
-.banniere_accueil h1{
-    text-align: center;
-    color: white;
-    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
-    padding: 40px;
-}
-.grid_accueil{
+.grid-accueil{
     background-color: white;
     padding: 60px;
+
+    &__title{
+        text-align: center;
+        margin-bottom: 80px;
+        color: var(--body-color-secondary);
+    }
 }
-.grid_accueil h2{
-    text-align: center;
-    margin-bottom: 80px;
-    color: black;
-}
-.grid_photo{
+.grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 300px 300px;
     gap: 15px;
-}
-.grid_photo img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 6px;
+
+    &__photo{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+    }
 }
 .lien_pages{
     position: relative;
+
+    &:hover .photo_hover {
+        display: flex;
+      }
 }
 .photo_hover {
     position: absolute;
@@ -48,16 +55,26 @@
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 6px;
     display: none;
-  } 
-  
-  .lien_pages:hover .photo_hover {
-    display: flex;
-  }
-  @media screen and (max-width: 996px){
-    .banniere_accueil{
-        padding: 75px;
+}
+
+/* Banner */
+@media screen and (max-width: 768px){
+    .banner{
+        padding: 1.5rem;
     }
-    .grid_photo{
+}
+
+/* Grid */
+@media screen and (max-width: 768px){
+    .grid-accueil{
+        padding: 1.5rem;
+
+        &__title{
+            margin-bottom: 0;
+        }
+    }
+    .grid{
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 300px);
         gap: 15px;
@@ -78,6 +95,5 @@
         color: white;
         background-color: rgba(0, 0, 0, 0.7);
         border-radius: 6px;
-        display: none;
       } 
   }

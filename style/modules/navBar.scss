@@ -3,19 +3,34 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: gray;
     padding: 0.5rem;
 
     &__logo{
-        width: 6rem;
         padding-left: 1.5rem;
         }
     &__logo> img{
-        width: 6rem;
-        height: 6rem;
-        object-fit: cover;
-        // border-radius: 20px;
+        width: 4.5rem;
     }
     &__list{
-        
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+    }
+    &__lien{
+        font-family: var(--body-font);
+        font-style: normal;
+        font-weight: var(--body-font-weight);
+        font-size: var(--body-font-size);
+        line-height: var(--body-line-height);
+        color: var(--body-color-secondary);
+        padding: 24px;
+        cursor: pointer;
+        transform: scale(0.1);
+        transition: transform 4000ms;
+    }
+    &__lien:hover{
+        transform: scale(1.15);
+        color: red;
     }
 }
