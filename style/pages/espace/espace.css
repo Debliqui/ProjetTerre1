@@ -14,10 +14,6 @@
     width: 80%;
   }
 }
-.contenu__espace__box1__title {
-  text-align: center;
-  padding: 1.5rem;
-}
 .contenu__espace__box2 {
   order: 1;
   border: 2px gray solid;

@@ -5,10 +5,10 @@
 @import 'pages//centre/centre.css';
 @import 'pages//espace/espace.css';
 @import 'pages//fond/fond.css';
+@import 'pages//atmosphere/atmosphere.css';
 /* Ancien */
 @import 'pages//ancien/montagnes.css';
 @import 'pages//ancien/volcans.css';
-@import 'pages//ancien/atmosphere.css';
 /* Modules */
 @import 'modules/navBar.css';
 @import 'modules/footer.css';
@@ -65,7 +65,7 @@ h1 {
   line-height: var(--header-line-height);
   color: var(--body-color);
   text-align: center;
-  padding: 25px;
+  padding: 1.5rem;
 }
 
 h2 {
@@ -75,6 +75,8 @@ h2 {
   font-size: var(--title-font-size);
   line-height: var(--title-line-height);
   color: var(--body-color);
+  text-align: center;
+  padding: 1.5rem;
 }
 
 * > a {

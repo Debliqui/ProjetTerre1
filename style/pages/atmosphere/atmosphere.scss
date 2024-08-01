@@ -4,37 +4,28 @@
     }
 }
 
-.contenu_centre{
+.contenu_atmosphere{
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     &__box1{
         width: 60%;
         padding: 5rem;
         @include screen{
             width: 80%;
-            padding: 1.25rem;
-        }
-    }
-    &__list li{
-        font-size: 1.25rem;
-        padding: 0.625rem;
-        @include screen{
-            font-size: 1rem;
+            padding: 20px;
         }
     }
     &__box2{
+        display: flex;
         border: 2px gray solid;
-        width: 60%;
+        width: 40%;
+        height: 31.25rem;
         @include screen{
             width: 80%;
         }
         & img{
-            display: flex; 
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             width: 100%;
         }
     }
