@@ -7,8 +7,7 @@
 @import 'pages//fond/fond.css';
 @import 'pages//atmosphere/atmosphere.css';
 @import 'pages//montagnes/montagnes.css';
-/* Ancien */
-@import 'pages//ancien/volcans.css';
+@import 'pages//volcans/volcans.css';
 /* Modules */
 @import 'modules/navBar.css';
 @import 'modules/footer.css';
