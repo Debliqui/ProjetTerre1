@@ -1,7 +1,7 @@
 .banner {
   position: relative;
   overflow: hidden;
-  padding: 400px;
+  padding: 25rem;
 }
 @media screen and (max-width: 768px) {
   .banner {
@@ -13,7 +13,7 @@
   position: relative;
   z-index: 2;
   box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
-  padding: 40px;
+  padding: 2.5rem;
 }
 .banner__background {
   position: absolute;
@@ -34,7 +34,7 @@
 }
 .grid-accueil__title {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
 }
 @media screen and (max-width: 768px) {
   .grid-accueil__title {
@@ -45,14 +45,14 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 300px;
+  grid-template-rows: 18.75rem 18.75rem;
   gap: 15px;
 }
 @media screen and (max-width: 768px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 300px);
+    grid-template-rows: repeat(6, 18.75rem);
     gap: 15px;
   }
 }

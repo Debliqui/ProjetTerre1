@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /* Pages */
-@import 'pages/home.css';
-@import 'pages/info.css';
-@import 'pages/atmosphere.css';
-@import 'pages/centre.css';
-@import 'pages/espace.css';
-@import 'pages/fond_marin.css';
-@import 'pages/montagnes.css';
-@import 'pages/volcans.css';
+@import 'pages//home/home.css';
+@import 'pages//info/info.css';
+@import 'pages//centre/centre.css';
+@import 'pages//espace/espace.css';
+@import 'pages//fond/fond.css';
+/* Ancien */
+@import 'pages//ancien/montagnes.css';
+@import 'pages//ancien/volcans.css';
+@import 'pages//ancien/atmosphere.css';
 /* Modules */
 @import 'modules/navBar.css';
 @import 'modules/footer.css';
@@ -63,6 +64,8 @@ h1 {
   font-size: var(--header-font-size);
   line-height: var(--header-line-height);
   color: var(--body-color);
+  text-align: center;
+  padding: 25px;
 }
 
 h2 {

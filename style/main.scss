@@ -2,14 +2,17 @@
 
 
 /* Pages */
-@import 'pages/home.css';
-@import 'pages/info.css';
-@import 'pages/atmosphere.css';
-@import 'pages/centre.css';
-@import 'pages/espace.css';
-@import 'pages/fond_marin.css';
-@import 'pages/montagnes.css';
-@import 'pages/volcans.css';
+@import 'pages//home/home.css';
+@import 'pages//info/info.css';
+@import 'pages//centre/centre.css';
+@import 'pages//espace/espace.css';
+@import 'pages//fond/fond.css';
+
+
+/* Ancien */
+@import 'pages//ancien/montagnes.css';
+@import 'pages//ancien/volcans.css';
+@import 'pages//ancien/atmosphere.css';
 
 /* Modules */
 @import 'modules/navBar.css';
@@ -72,6 +75,8 @@ h1 {
     font-size: var(--header-font-size);
     line-height: var(--header-line-height);
     color: var(--body-color);
+    text-align: center;
+    padding: 25px;
 }
 
 h2 {
