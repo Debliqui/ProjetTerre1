@@ -6,8 +6,8 @@
 @import 'pages//espace/espace.css';
 @import 'pages//fond/fond.css';
 @import 'pages//atmosphere/atmosphere.css';
+@import 'pages//montagnes/montagnes.css';
 /* Ancien */
-@import 'pages//ancien/montagnes.css';
 @import 'pages//ancien/volcans.css';
 /* Modules */
 @import 'modules/navBar.css';

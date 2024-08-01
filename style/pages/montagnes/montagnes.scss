@@ -1,0 +1,30 @@
+@mixin screen{
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+.contenu_montagnes{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    &__box1{
+        width: 60%;
+        padding: 5rem;
+        @include screen{
+            width: 80%;
+            padding: 20px;
+        }
+    }
+    &__box2{
+        border: 2px gray solid;
+        width: 60%;
+        @include screen{
+            width: 80%;
+        }
+        & img{
+            display: flex; 
+            width: 100%;
+        }
+    }
+}

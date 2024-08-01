@@ -1,0 +1,29 @@
+.contenu_montagnes {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.contenu_montagnes__box1 {
+  width: 60%;
+  padding: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .contenu_montagnes__box1 {
+    width: 80%;
+    padding: 20px;
+  }
+}
+.contenu_montagnes__box2 {
+  border: 2px gray solid;
+  width: 60%;
+}
+@media screen and (max-width: 768px) {
+  .contenu_montagnes__box2 {
+    width: 80%;
+  }
+}
+.contenu_montagnes__box2 img {
+  display: flex;
+  width: 100%;
+}/*# sourceMappingURL=montagnes.css.map */
