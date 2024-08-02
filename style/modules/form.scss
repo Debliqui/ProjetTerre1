@@ -11,9 +11,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     &__title{
         text-align: center;
+        color: var(--body-color-secondary);
     }
     &__container{
         padding: 1rem;
@@ -61,11 +61,10 @@
         font-size: 1.5em;
     }
     input[type=text], input[type=email], textarea{
-        border: none;
-        border-radius: 2px 2px 0 0 ;
         border-bottom: 2px black solid;
         width: 100%;
-    }
+        outline:  none;
+    } 
     #satisfaction{
         width: 75%;
         @include screen{
@@ -77,18 +76,19 @@
         height: 12.5rem;
     }
     input[type=submit]{
-        padding: 0.625rem;
+        padding: 8px 24px;
         border-radius: 5px;
         margin: 0.32rem;
-    }
-    input[type=submit]:hover{
-        color: white;
-        background-color: black;
-    }
-    @include screen{
-        input[type=submit]:active{
-            color: white;
-            background-color: black;
+        transform: transform 400ms;
+        &:hover{
+            box-shadow: 2px 2px gray;
         }
+        &:active{
+            transform: scale(1);
+            @include screen{
+                transform: scale(1);
+            }
+        }
+        
     }
 }
