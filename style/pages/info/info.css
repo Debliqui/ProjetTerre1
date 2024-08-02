@@ -29,7 +29,6 @@
 }
 .contener__box2 {
   display: flex;
-  border: 1px gray solid;
   width: 40%;
   margin: 1.875rem;
 }
