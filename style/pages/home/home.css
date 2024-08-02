@@ -14,6 +14,10 @@
   z-index: 2;
   box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
   padding: 2.5rem;
+  transition: transform 600ms;
+}
+.banner__title:hover {
+  transform: scale(1.15);
 }
 .banner__background {
   position: absolute;
@@ -66,6 +70,7 @@
 
 .lien_pages {
   position: relative;
+  transition-duration: 400ms;
 }
 @media screen and (max-width: 768px) {
   .lien_pages {

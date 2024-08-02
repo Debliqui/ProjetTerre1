@@ -10,6 +10,10 @@
         }
     &__logo img{
         width: 7rem;
+        transition: transform 400ms;
+        &:hover{
+            transform: scale(1.15);
+        }
     }
     &__list{
         display: flex;
@@ -25,11 +29,10 @@
         color: var(--body-color);
         padding: 24px;
         cursor: pointer;
-        transform: scale(0.1);
-        transition: transform 4000ms;
     }
     &__lien:hover{
-        transform: scale(1.15);
-        color: red;
+        color: grey;
+        font-weight: var(--body-highlight-font-weight);
+        text-shadow: 0.5px 0.5px var(--body-color);
     }
 }
