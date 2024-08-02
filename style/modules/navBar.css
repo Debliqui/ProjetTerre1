@@ -8,7 +8,7 @@
 .navBar__logo {
   padding-left: 1.5rem;
 }
-.navBar__logo > img {
+.navBar__logo img {
   width: 4.5rem;
 }
 .navBar__list {

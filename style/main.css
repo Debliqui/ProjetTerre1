@@ -2,15 +2,13 @@
 /* Pages */
 @import 'pages//home/home.css';
 @import 'pages//info/info.css';
-@import 'pages//centre/centre.css';
 @import 'pages//espace/espace.css';
-@import 'pages//fond/fond.css';
-@import 'pages//atmosphere/atmosphere.css';
-@import 'pages//montagnes/montagnes.css';
 @import 'pages//volcans/volcans.css';
 /* Modules */
 @import 'modules/navBar.css';
 @import 'modules/footer.css';
+@import 'modules/form.css';
+/* Screen */
 /* Design System */
 :root {
   /*Colors*/
@@ -37,6 +35,19 @@
   --header-line-height: 5.375rem;
   --title-line-height: 1.75rem;
 }
+@media screen and (max-width: 768px) {
+  :root {
+    /* Mobile Variables */
+    --body-font-size: 1rem;
+    --body-highlight-font-size: 1rem;
+    --header-font-size: 2.5rem;
+    --title-font-size: 1.25rem;
+    --body-line-height: 1.25rem;
+    --body-highlight-line-height: 1.25rem;
+    --header-line-height: 3rem;
+    --title-line-height: 1.5rem;
+  }
+}
 
 * {
   margin: 0;
@@ -46,8 +57,7 @@
 body {
   background-image: url(/image/fond\ etoiler\ 2.jpg);
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
   font-family: var(--body-font);
   font-style: normal;
   font-weight: var(--body-font-weight);
@@ -82,16 +92,48 @@ h2 {
   text-decoration: none;
 }
 
-@media (max-width: 768px) {
-  :root {
-    /* Mobile Variables */
-    --body-font-size: 1rem;
-    --body-highlight-font-size: 1rem;
-    --header-font-size: 2.5rem;
-    --title-font-size: 1.25rem;
-    --body-line-height: 1.25rem;
-    --body-highlight-line-height: 1.25rem;
-    --header-line-height: 3rem;
-    --title-line-height: 1.5rem;
+li {
+  font-size: 1.25rem;
+  padding: 0.625rem;
+}
+@media screen and (max-width: 768px) {
+  li {
+    font-size: 1rem;
   }
+}
+
+.box1 {
+  width: 60%;
+  padding: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .box1 {
+    width: 80%;
+    padding: 20px;
+  }
+}
+
+.box2 {
+  display: flex;
+  border: 2px gray solid;
+  width: 60%;
+  height: 31.25rem;
+}
+@media screen and (max-width: 768px) {
+  .box2 {
+    width: 80%;
+    height: 18.75rem;
+  }
+}
+.box2 img {
+  width: 150%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

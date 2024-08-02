@@ -4,17 +4,21 @@
 /* Pages */
 @import 'pages//home/home.css';
 @import 'pages//info/info.css';
-@import 'pages//centre/centre.css';
 @import 'pages//espace/espace.css';
-@import 'pages//fond/fond.css';
-@import 'pages//atmosphere/atmosphere.css';
-@import 'pages//montagnes/montagnes.css';
 @import 'pages//volcans/volcans.css';
 
 
 /* Modules */
 @import 'modules/navBar.css';
 @import 'modules/footer.css';
+@import 'modules/form.css';
+
+/* Screen */
+@mixin screen{
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
 
 /* Design System */
 :root{
@@ -47,6 +51,18 @@
     --body-highlight-line-height: 1.5rem;
     --header-line-height: 5.375rem;
     --title-line-height: 1.75rem;
+    @include screen{
+        /* Mobile Variables */
+        --body-font-size: 1rem;
+        --body-highlight-font-size: 1rem;
+        --header-font-size: 2.5rem;
+        --title-font-size: 1.25rem;
+        
+        --body-line-height: 1.25rem;
+        --body-highlight-line-height: 1.25rem;
+        --header-line-height: 3rem;
+        --title-line-height: 1.5rem;
+    }
 }
 
 *{
@@ -57,7 +73,7 @@
 body{
     background-image: url(/image/fond\ etoiler\ 2.jpg);
     width: 100%;
-    object-fit: cover;
+    background-size: cover;
     font-family: var(--body-font);
     font-style: normal;
     font-weight: var(--body-font-weight);
@@ -91,18 +107,40 @@ h2 {
 * > a{
     text-decoration: none;
 } 
-
-@media (max-width: 768px) {
-    :root {
-      /* Mobile Variables */
-      --body-font-size: 1rem;
-      --body-highlight-font-size: 1rem;
-      --header-font-size: 2.5rem;
-      --title-font-size: 1.25rem;
-  
-      --body-line-height: 1.25rem;
-      --body-highlight-line-height: 1.25rem;
-      --header-line-height: 3rem;
-      --title-line-height: 1.5rem;
+li{
+    font-size: 1.25rem;
+    padding: 0.625rem;
+    @include screen{
+        font-size: 1rem;
     }
-  }
+}
+
+.box1{
+    width: 60%;
+    padding: 5rem;
+    @include screen{
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+.box2{
+    display: flex;
+        border: 2px gray solid;
+        width: 60%;
+        height: 31.25rem;
+        @include screen{
+            width: 80%;
+            height: 18.75rem;
+        }
+        & img{
+            width: 150%;
+            object-fit: cover;
+        }
+}
+.contenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
