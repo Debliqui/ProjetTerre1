@@ -8,6 +8,7 @@
 }
 .form__title {
   text-align: center;
+  color: var(--body-color-secondary);
 }
 .form__container {
   padding: 1rem;
@@ -63,10 +64,9 @@
   font-size: 1.5em;
 }
 .form input[type=text], .form input[type=email], .form textarea {
-  border: none;
-  border-radius: 2px 2px 0 0;
   border-bottom: 2px black solid;
   width: 100%;
+  outline: none;
 }
 .form #satisfaction {
   width: 75%;
@@ -81,17 +81,19 @@
   height: 12.5rem;
 }
 .form input[type=submit] {
-  padding: 0.625rem;
+  padding: 8px 24px;
   border-radius: 5px;
   margin: 0.32rem;
+  transform: transform 400ms;
 }
 .form input[type=submit]:hover {
-  color: white;
-  background-color: black;
+  box-shadow: 2px 2px gray;
+}
+.form input[type=submit]:active {
+  transform: scale(1);
 }
 @media screen and (max-width: 768px) {
   .form input[type=submit]:active {
-    color: white;
-    background-color: black;
+    transform: scale(1);
   }
 }/*# sourceMappingURL=form.css.map */
